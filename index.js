@@ -24,7 +24,7 @@ import { promises as fs } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
-export const name = 'dsh-screenshot'
+export const name = 'dsh-screenshot-chat'
 
 /** Services this bundle reads; a profile without one leaves it inactive. */
 export const inject = ['webServer']

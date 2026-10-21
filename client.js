@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: 'dsh-screenshot',
+  id: 'dsh-screenshot-chat',
   factory(require) {
     const React = require('react')
     const h = React.createElement
