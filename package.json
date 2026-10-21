@@ -1,0 +1,46 @@
+{
+  "name": "dsh-screenshot-chat",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Screenshot capture for the DSH composer: adds a Screenshot entry to the chat input's + menu with region capture and a hide-window variant that hides the current window before the native macOS selection overlay and restores it afterwards; the capture lands in the input box as an image attachment.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "screenshot",
+    "screencapture",
+    "macos",
+    "composer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoy616/dsh-screenshot-chat.git"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-commands"
+      ]
+    }
+  }
+}
