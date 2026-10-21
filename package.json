@@ -1,6 +1,6 @@
 {
   "name": "dsh-screenshot-chat",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "Screenshot capture for the DSH composer: adds a Screenshot entry to the chat input's + menu with region capture and a hide-window variant that hides the current window before the native macOS selection overlay and restores it afterwards; the capture lands in the input box as an image attachment.",
   "license": "MIT",
